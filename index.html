@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabián Ayala | Ingeniero Automático & Desarrollador</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-part">F</span>
+                <span class="logo-part">A</span>
+                <span class="logo-part">A</span>
+                <span class="logo-part">U</span>
+            </div>
+            <div class="neon-progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="preloader-text">Cargando sistemas...</p>
+        </div>
+    </div>
+
+
+    <!-- Barra de navegación -->
+<header id="navbar">
+    <nav class="container">
+        <a href="/" class="logo">Fabián Ayala</a>
+        
+        <!-- Menú Hamburguesa (solo móvil) -->
+        <button id="menu-toggle" aria-label="Abrir menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Lista de Navegación -->
+        <ul id="nav-menu">
+            <li><a href="#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Proyectos</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section (Bienvenida) -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hola, soy <span class="highlight">Nostradamus</span></h1>
+            <p>Desarrollador Multidisciplinario.</p>
+            <a href="#contact" class="btn-neon">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="about" class="section">
+    <div class="container">
+        <h2>Ingeniero Automático & <span class="highlight">Desarrollador Multidisciplinario</span></h2>
+        <div class="about-content">
+            <p>
+                Soy <strong>Fabián Alejandro Ayala Uffo</strong>, ingeniero apasionado por la intersección entre la <strong>automatización industrial</strong> y el <strong>desarrollo de software</strong>. 
+                Diseño soluciones técnicas que van desde <strong>PLC y microcontroladores</strong> hasta <strong>aplicaciones web y de escritorio</strong>, siempre con un enfoque en 
+                <strong>eficiencia, seguridad y escalabilidad</strong>.
+            </p>
+            <p>
+                Cuando no estoy optimizando código o depurando sistemas embebidos, me encontrarás:
+            </p>
+            <ul class="interests-list">
+                <li>🖌️ <strong>Dibujando</strong> mundos de fantasía oscura (¡como los de mis libros favoritos!).</li>
+                <li>🎸 <strong>Tocando riffs</strong> de guitarra entre algoritmos.</li>
+                <li>🤸 <strong>Desafiando la gravedad</strong> practicando parkour.</li>
+            </ul>
+            <p>
+                <em>"Creo que la tecnología y el arte no son opuestos: ambos requieren creatividad, precisión y un poco de rebeldía."</em>
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="section">
+    <div class="container">
+        <h2>Habilidades <span class="highlight">Técnicas</span></h2>
+        <div class="skills-grid">
+            <!-- Tarjeta 1: Automatización -->
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>Automatización Industrial</h3>
+                <ul>
+                    <li>PLC (Siemens, Allen Bradley)</li>
+                    <li>Microcontroladores (Arduino, ESP32)</li>
+                    <li>Robótica colaborativa</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 2: Programación -->
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Desarrollo de Software</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> React, HTML/CSS, JavaScript</li>
+                    <li><strong>Backend:</strong> Node.js, Python, SQL</li>
+                    <li><strong>Desktop:</strong> Electron, .NET</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 3: Ciberseguridad -->
+            <div class="skill-card">
+                <div class="skill-icon">🔐</div>
+                <h3>Ciberseguridad</h3>
+                <ul>
+                    <li>Hardening de sistemas</li>
+                    <li>Análisis de vulnerabilidades</li>
+                    <li>Ethical Hacking (básico)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nota adicional opcional -->
+        <div class="skills-note">
+            <p>
+                <strong>Enfoque transversal:</strong> Integro <strong>criptografía</strong> en mis proyectos de automatización 
+                y aplico <strong>patrones de diseño limpio</strong> incluso en firmware. 
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Mis <span class="highlight">Proyectos</span></h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Los proyectos se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contacto <span class="highlight">Directo</span></h2>
+            <p class="section-subtitle">¿Listo para automatizar tus ideas? Envíame un mensaje o conéctate por redes.</p>
+            
+            <div class="contact-grid">
+                <!-- Formulario -->
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/xjkowlno" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nombre Completo" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tu mensaje..." required></textarea>
+                            <!-- <i class="fas fa-comment"></i> -->
+                        </div>
+                        <button type="submit" class="btn-neon">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="formResponse" class="form-response"></div>
+                </div>
+                
+                <!-- Info de Contacto -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Ubicación</h3>
+                        <p>San José de Las Lajas, Mayabeque, Cuba</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Correo</h3>
+                        <a href="mailto:tuemail@dominio.com">n62707291@dominio.com</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/5353493159" target="_blank">+53 53495359</a>
+                    </div>
+                    
+                    <!-- Redes Sociales -->
+                    <div class="social-links">
+                        <a href="https://github.com/Nostrad4mus" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/tuperfil" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com/tucanal" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="tu-cv.pdf" download aria-label="Descargar CV">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fabián Alejandro Ayala Uffo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
