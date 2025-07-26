@@ -1263,3 +1263,114 @@ footer {
 .logo-svg:hover {
   transform: scale(1.05);
 }
+
+
+/* Estilos para la sección "Sobre Mí" */
+.about-content {
+    background: rgba(30, 30, 44, 0.7);
+    padding: 3rem;
+    border-radius: 15px;
+    border-left: 3px solid var(--neon);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 80% 20%, rgba(110, 72, 170, 0.1) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.about-intro p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about-passions {
+    margin: 3rem 0;
+}
+
+.about-passions h3 {
+    margin-bottom: 2rem;
+    color: var(--neon);
+    font-size: 1.4rem;
+}
+
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.passion-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-top: 2px solid var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+    background: rgba(110, 72, 170, 0.1);
+}
+
+.passion-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.passion-card h4 {
+    margin-bottom: 0.8rem;
+    color: var(--light);
+}
+
+.passion-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.about-philosophy {
+    margin-top: 3rem;
+}
+
+.about-philosophy blockquote {
+    font-style: italic;
+    padding: 1.5rem;
+    border-left: 3px solid var(--neon);
+    background: rgba(0, 242, 255, 0.05);
+    position: relative;
+}
+
+.about-philosophy blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 4rem;
+    color: rgba(0, 242, 255, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 2rem;
+    }
+    
+    .passions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-philosophy blockquote {
+        font-size: 1rem;
+    }
+}
