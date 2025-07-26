@@ -1,7 +1,5 @@
 <!-- Portada animada con badges y emojis -->
 <h1 align="center">
-  <img src="assets/img/profile.jpg" width="130" style="border-radius:50%;box-shadow:0 0 15px #0ff; width:200px; height:200px; object-fit:cover;" alt="Fuffo"/>
-  <br>
   <span style="font-size:2.7rem; font-weight:bold">¡Hola, mundo! Soy Fuffo 👋✨</span>
 </h1>
 
@@ -31,10 +29,10 @@ Mi vida navega entre **circuitos y melodías**, alternando entre **algoritmos** 
 
 <table>
   <tr>
-    <td align="center"><img src="https://img.icons8.com/doodle/48/rock-music.png"/><br><b>Música</b></td>
-    <td align="center"><img src="https://img.icons8.com/color/48/write.png"/><br><b>Escritura</b></td>
-    <td align="center"><img src="https://img.icons8.com/color/48/controller.png"/><br><b>Videojuegos</b></td>
-    <td align="center"><img src="https://img.icons8.com/color/48/dog.png"/><br><b>Animales</b></td>
+    <td align="center"><h2>🎵</h2><b>Música</b></td>
+    <td align="center"><h2>📖</h2><b>Escritura</b></td>
+    <td align="center"><h2>🕹️</h2><b>Videojuegos</b></td>
+    <td align="center"><h2>🐕</h2><b>Animales</b></td>
   </tr>
   <tr>
     <td>Fanático de Linkin Park y el rock. Toco guitarra (aún no como Chester, pero lo intento).</td>
