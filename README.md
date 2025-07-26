@@ -31,7 +31,7 @@ Mi vida navega entre **circuitos y melodías**, alternando entre **algoritmos** 
   <tr>
     <td align="center"><h2>🎵</h2><b>Música</b></td>
     <td align="center"><h2>📖</h2><b>Escritura</b></td>
-    <td align="center"><h2>🕹️</h2><b>Videojuegos</b></td>
+    <td align="center"><h2>🎮</h2><b>Videojuegos</b></td>
     <td align="center"><h2>🐕</h2><b>Animales</b></td>
   </tr>
   <tr>
