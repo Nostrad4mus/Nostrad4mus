@@ -35,6 +35,8 @@
 </head>
 <body>
 
+    <div class="global-background"></div>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-content">
@@ -55,7 +57,7 @@
     <header id="navbar">
         <nav class="container">
             
-            <a href="/" class="logo"><img src="assets/img/projects/logo.svg" alt=""></a>
+            <a href="#hero" class="logo"><img src="assets/img/projects/logo.svg" alt=""></a>
             
             <!-- Menú Hamburguesa (solo móvil) -->
             <button id="menu-toggle" aria-label="Abrir menú">
@@ -75,7 +77,7 @@
     </header>
 
     <!-- Hero Section (Bienvenida) -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <h1>Hola, soy <span class="highlight">Fabián Ayala</span></h1>
             <p>Ingeniero Automático & Desarrollador Multidisciplinario</p>
@@ -89,98 +91,196 @@
     <!-- Sección "Sobre mí" -->
     <section id="about" class="section">
         <div class="container">
-            <h2>Ingeniero Automático & <span class="highlight">Desarrollador Full-Stack</span></h2>
+            <h2>Conoce al <span class="highlight">ingeniero</span> detrás del código</h2>
             
             <div class="about-content">
                 <div class="about-intro">
-                    <p>¡Hola! Soy <strong>Fabián Alejandro Ayala Uffo</strong>, pero todos me llaman <strong>Fuffo</strong>. Soy un ingeniero apasionado por crear puentes entre el mundo físico y el digital, combinando mi expertise en automatización industrial con desarrollo de software de alto nivel.</p>
+                    <div class="profile-header">
+                        <img src="assets/img/profile.jpg" alt="Fabián Ayala" class="profile-image" loading="lazy">
+                        <div class="profile-quote">
+                            <blockquote>"No soy más que un estudiante con sueños grandes y una guitarra desafinada"</blockquote>
+                        </div>
+                    </div>
                     
-                    <p>Me especializo en diseñar sistemas inteligentes que van desde <strong>controladores industriales</strong> hasta <strong>aplicaciones web complejas</strong>, siempre con un enfoque en eficiencia, seguridad y escalabilidad.</p>
+                    <p>Hola, soy <strong>Fabian A. Ayala Uffo</strong>, pero puedes llamarme <strong>Fuffo</strong>. Nací en Cuba y actualmente estoy dando lo mejor de mí en la carrera de Ingeniería Automática en la prestigiosa <strong>CUJAE</strong>.</p>
+                    
+                    <p>Mi vida es un equilibrio constante entre los <strong>circuitos y las melodías</strong>, entre los <strong>algoritmos y las historias de fantasía</strong>. Cuando no estoy resolviendo problemas técnicos, probablemente esté escribiendo mi novela oscura, practicando guitarra o muriendo por enésima vez en Dark Souls.</p>
                 </div>
                 
                 <div class="about-passions">
-                    <h3>Cuando no estoy programando...</h3>
+                    <h3>Mis otros universos</h3>
                     <div class="passions-grid">
                         <div class="passion-card">
-                            <div class="passion-icon">🎸</div>
+                            <div class="passion-icon"><i class="fas fa-music"></i></div>
                             <h4>Música</h4>
-                            <p>Toco la guitarra eléctrica desde los 15 años. Me encanta el rock progresivo y el jazz fusión. Actualmente aprendiendo a producir música electrónica.</p>
+                            <p>Fanático de Linkin Park y el rock. Toco la guitarra (aún no como Chester, pero lo intento). La música es mi terapia y mi combustible creativo.</p>
                         </div>
                         
                         <div class="passion-card">
-                            <div class="passion-icon">🤸</div>
-                            <h4>Parkour</h4>
-                            <p>Practicante desde hace 5 años. Disciplina que me enseñó a ver obstáculos como oportunidades y a superar límites (físicos y mentales).</p>
+                            <div class="passion-icon"><i class="fas fa-book"></i></div>
+                            <h4>Escritura</h4>
+                            <p>Actualmente escribiendo "Corazón Redentor", una novela de fantasía oscura. Próximamente disponible para descarga desde esta misma página.</p>
                         </div>
                         
                         <div class="passion-card">
-                            <div class="passion-icon">🎨</div>
-                            <h4>Arte Digital</h4>
-                            <p>Dibujo mundos de fantasía oscura inspirados en autores como H.P. Lovecraft y Brandon Sanderson. Uso principalmente Procreate y Blender.</p>
+                            <div class="passion-icon"><i class="fas fa-gamepad"></i></div>
+                            <h4>Videojuegos</h4>
+                            <p>Dark Souls me enseñó que está bien buscar una hoguera donde descansar. Hollow Knight me mostró la belleza en la perseverancia. Actualmente rejugando (siempre).</p>
                         </div>
                         
                         <div class="passion-card">
-                            <div class="passion-icon">📚</div>
-                            <h4>Libros</h4>
-                            <p>Devoro literatura de fantasía épica y ciencia ficción. Mi libro favorito: "El Nombre del Viento" de Patrick Rothfuss.</p>
+                            <div class="passion-icon"><i class="fas fa-paw"></i></div>
+                            <h4>Animales</h4>
+                            <p>Compañero de Kendo, mi perro fiel. Aunque la salud me ha hecho perder peso y masa muscular, sigo encontrando fuerza en los pequeños placeres.</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="about-philosophy">
-                    <blockquote>
-                        "Creo que la tecnología debe servir para expandir la creatividad humana, no para limitarla. Cada línea de código es un verso y cada circuito un poema en el lenguaje universal de la innovación."
-                    </blockquote>
+                    <div class="philosophy-card">
+                        <h3>Mi filosofía</h3>
+                        <p>Creo que la ingeniería y el arte no son mundos separados. Cada sistema que automatizo lleva un toque de creatividad, cada línea de código tiene ritmo, cada solución técnica cuenta una historia.</p>
+                        <p>Dark Souls me enseñó que los desafíos son inevitables, pero también temporales. La CUJAE me mostró que el conocimiento se construye paso a paso. Y la música me recuerda que hasta las notas discordantes pueden encontrar su armonía.</p>
+                        <div class="signature">
+                            <img src="assets/img/signature.png" alt="Firma de Fabián" loading="lazy">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Habilidades -->
+
     <section id="skills" class="section">
         <div class="container">
-            <h2>Habilidades <span class="highlight">Técnicas</span></h2>
-            <div class="skills-grid">
-                <!-- Tarjeta 1: Automatización -->
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>Automatización Industrial</h3>
-                    <ul>
-                        <li>PLC (Siemens, Allen Bradley)</li>
-                        <li>Microcontroladores (Arduino, ESP32)</li>
-                        <li>Robótica colaborativa</li>
-                    </ul>
+            <h2>Mi <span class="highlight">Arsenal</span> Técnico</h2>
+            <p class="section-subtitle">Las herramientas que he dominado para construir puentes entre el mundo físico y digital</p>
+            
+            <div class="skills-tabs">
+                <button class="tab-button active" data-tab="engineering">Ingeniería</button>
+                <button class="tab-button" data-tab="development">Desarrollo</button>
+                <button class="tab-button" data-tab="soft-skills">Habilidades Blandas</button>
+            </div>
+            
+            <div class="skills-content">
+                <!-- Pestaña de Ingeniería -->
+                <div id="engineering" class="tab-content active">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-industry"></i></div>
+                            <h3>Automatización Industrial</h3>
+                            <ul>
+                                <li><strong>PLCs:</strong> Siemens S7, Allen Bradley, TIA Portal</li>
+                                <li><strong>SCADA:</strong> WinCC, Ignition, Factory I/O</li>
+                                <li><strong>Robótica:</strong> Manipuladores industriales, cobots</li>
+                                <li><strong>Instrumentación:</strong> Sensores, actuadores, HMI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                            <h3>Electrónica Embebida</h3>
+                            <ul>
+                                <li><strong>Microcontroladores:</strong> Arduino, ESP32, STM32</li>
+                                <li><strong>Protocolos:</strong> Modbus, CAN, I2C, SPI</li>
+                                <li><strong>Diseño:</strong> Circuitos impresos (KiCad)</li>
+                                <li><strong>IoT:</strong> Node-RED, MQTT, OPC UA</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <h3>Sistemas Inteligentes</h3>
+                            <ul>
+                                <li><strong>Visón Artificial:</strong> OpenCV, TensorFlow Lite</li>
+                                <li><strong>Control Avanzado:</strong> PID, Fuzzy Logic</li>
+                                <li><strong>Digital Twins:</strong> Simulación de procesos</li>
+                                <li><strong>Machine Learning:</strong> Modelos embebidos</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Tarjeta 2: Programación -->
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Desarrollo de Software</h3>
-                    <ul>
-                        <li><strong>Frontend:</strong> React, HTML/CSS, JavaScript</li>
-                        <li><strong>Backend:</strong> Node.js, Python, SQL</li>
-                        <li><strong>Desktop:</strong> Electron, .NET</li>
-                    </ul>
+                
+                <!-- Pestaña de Desarrollo -->
+                <div id="development" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h3>Full-Stack Development</h3>
+                            <ul>
+                                <li><strong>Frontend:</strong> React, Vue, HTML5/CSS3, JavaScript/TypeScript</li>
+                                <li><strong>Backend:</strong> Node.js, Python (Flask/Django), C#</li>
+                                <li><strong>Bases de datos:</strong> SQL (PostgreSQL, MySQL), NoSQL (MongoDB)</li>
+                                <li><strong>DevOps:</strong> Docker, CI/CD (GitHub Actions)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                            <h3>Ciberseguridad</h3>
+                            <ul>
+                                <li><strong>Hardening:</strong> Sistemas industriales y IT</li>
+                                <li><strong>Pentesting:</strong> Ethical hacking básico</li>
+                                <li><strong>Criptografía:</strong> AES, RSA, implementación segura</li>
+                                <li><strong>OT Security:</strong> Protección de redes industriales</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                            <h3>Herramientas Especializadas</h3>
+                            <ul>
+                                <li><strong>CAD:</strong> SolidWorks, AutoCAD Electrical</li>
+                                <li><strong>Simulación:</strong> MATLAB/Simulink, LabVIEW</li>
+                                <li><strong>Cloud:</strong> AWS IoT, Azure Digital Twins</li>
+                                <li><strong>Control de versiones:</strong> Git avanzado</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Tarjeta 3: Ciberseguridad -->
-                <div class="skill-card">
-                    <div class="skill-icon">🔐</div>
-                    <h3>Ciberseguridad</h3>
-                    <ul>
-                        <li>Hardening de sistemas</li>
-                        <li>Análisis de vulnerabilidades</li>
-                        <li>Ethical Hacking (básico)</li>
-                    </ul>
+                
+                <!-- Pestaña de Habilidades Blandas -->
+                <div id="soft-skills" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Mentalidad de Ingeniero</h3>
+                            <ul>
+                                <li><strong>Resolución de problemas:</strong> Metodología sistemática</li>
+                                <li><strong>Pensamiento algorítmico:</strong> Descomposición de problemas</li>
+                                <li><strong>Adaptabilidad:</strong> Aprendizaje rápido de nuevas tecnologías</li>
+                                <li><strong>Gestión de proyectos:</strong> Metodologías ágiles</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <h3>Trabajo en Equipo</h3>
+                            <ul>
+                                <li><strong>Comunicación técnica:</strong> Explicar conceptos complejos</li>
+                                <li><strong>Colaboración interdisciplinar:</strong> Puente entre departamentos</li>
+                                <li><strong>Liderazgo técnico:</strong> Guiar equipos en proyectos</li>
+                                <li><strong>Mentoring:</strong> Compartir conocimiento</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Creatividad Aplicada</h3>
+                            <ul>
+                                <li><strong>Innovación:</strong> Soluciones fuera de lo convencional</li>
+                                <li><strong>Diseño de sistemas:</strong> Arquitecturas eficientes</li>
+                                <li><strong>Improvisación:</strong> Soluciones con recursos limitados</li>
+                                <li><strong>Arte y tecnología:</strong> Proyectos interdisciplinares</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Nota adicional opcional -->
-            <div class="skills-note">
-                <p>
-                    <strong>Enfoque transversal:</strong> Integro <strong>criptografía</strong> en mis proyectos de automatización 
-                    y aplico <strong>patrones de diseño limpio</strong> incluso en firmware. 
-                </p>
+            
+            <div class="skills-footer">
+                <p><strong>Enfoque integral:</strong> Combino conocimientos técnicos profundos con creatividad y habilidades interpersonales para ofrecer soluciones completas que van desde el diseño conceptual hasta la implementación y mantenimiento.</p>
             </div>
         </div>
     </section>

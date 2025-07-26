@@ -257,3 +257,71 @@ function formatLinkType(type) {
   };
   return names[type] || type;
 }
+
+
+
+// Añade esto a tu main.js
+function initSkillsTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            if (this.classList.contains('active')) return;
+            
+            const tabId = this.getAttribute('data-tab');
+            const targetTab = document.getElementById(tabId);
+            
+            // Desactivar todos
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.pointerEvents = 'none'; // Evitar clicks durante transición
+            });
+            
+            tabContents.forEach(content => {
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(15px)';
+                setTimeout(() => content.classList.remove('active'), 300);
+            });
+            
+            // Activar el seleccionado
+            this.classList.add('active');
+            
+            setTimeout(() => {
+                targetTab.classList.add('active');
+                setTimeout(() => {
+                    targetTab.style.opacity = '1';
+                    targetTab.style.transform = 'translateY(0)';
+                    
+                    // Animar las tarjetas individualmente
+                    const cards = targetTab.querySelectorAll('.skill-card');
+                    cards.forEach((card, index) => {
+                        card.style.setProperty('--order', index);
+                        card.style.animation = 'fadeInUp 0.6s ease forwards';
+                        card.style.animationDelay = `calc(${index} * 0.1s)`;
+                    });
+                    
+                    // Restaurar eventos
+                    tabButtons.forEach(btn => btn.style.pointerEvents = 'auto');
+                }, 50);
+            }, 300);
+        });
+    });
+    
+    // Inicializar primera pestaña
+    const firstTab = document.querySelector('.tab-button.active');
+    if (firstTab) {
+        const cards = document.querySelector('.tab-content.active')?.querySelectorAll('.skill-card');
+        cards?.forEach((card, index) => {
+            card.style.setProperty('--order', index);
+            card.style.animation = 'fadeInUp 0.6s ease forwards';
+            card.style.animationDelay = `calc(${index} * 0.1s)`;
+        });
+    }
+}
+
+// Llamar la función cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', initSkillsTabs);
+
+
+
